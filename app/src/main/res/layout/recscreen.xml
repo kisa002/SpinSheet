@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="추천페이퍼 제목"
+        android:textSize="30dp"
+        android:id="@+id/textRecTitle"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="추천 페이퍼 내용"
+        android:textSize="20dp"
+        android:id="@+id/textRecContent"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:hint="답변이 존재하지 않습니다."
+            android:id="@+id/textRecReplie"
+            android:onClick="onClick"/>
+
+    </ScrollView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/r_goback"
+        android:text="뒤로가기"
+        android:onClick="onClick"/>
+
+</LinearLayout>
